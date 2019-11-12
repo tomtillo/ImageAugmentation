@@ -1,0 +1,21 @@
+class Pic(object):
+   
+    def __init__(self, path):
+        self.path = path
+        self.img = cv2.imread(path)
+        self.HEIGHT,self.WIDTH,self.CHANNELS = self.img.shape
+        self.ASPECT_RATIO = self.WIDTH/self.HEIGHT
+        
+    def flip(self,direction):
+        
+        if direction == 'HORIZONTAL' : 
+            #flip horizontal
+        if direction == 'VERTICAL' :
+          #flip vertical
+            
+        return new_image
+        
+    def write_image(self,path) :
+        cv2.imwrite(path ,self.img)
+
+      
